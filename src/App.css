@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../font/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "Cookie";
+  src: url(../font/Cookie-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+  /* display: none; */
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  margin-block: 1.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #13226b;
+  border-radius: 100vw;
+  margin-block: 1px;
+}
+
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/80/Backgorund.gif");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #969cae;
+  /* background-image:; */
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  gap: 5vh;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.card {
+  width: 60vw;
+  background-color: white;
+  border-radius: 1.5rem;
+  min-width: 600px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 80vh; /*TU COS*/
+}
+.card-title {
+  margin: 15px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Ubuntu";
+}
+
+.button-area {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  background-color: #13226b;
+  min-width: 20%;
+  border: none;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* CV */
+
+.cv {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 5px -2px gray;
+}
+.soft {
+  display: block;
+  width: 30%;
+  background-color: #13226b;
+}
+.cv_photo {
+  width: 80%;
+  border-radius: 2pc;
+  margin: 10%;
+  transition: 1.5s;
+  box-shadow: 12px 12px #0e184c;
+}
+.cv_photo:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px #0e184c;
+  cursor: crosshair;
+}
+.soft_cat {
+  color: white;
+  background-color: #0e184c;
+  margin: 0;
+  text-align: center;
+}
+.soft_list_elem {
+  list-style-type: none;
+  padding-left: 10px;
+  color: white;
+  font-size: 12px;
+}
+.soft_elem {
+  margin-bottom: 4px;
+}
+.soft_elem_ht {
+  /*head title*/
+  font-weight: 900;
+}
+
+.hard {
+  flex-direction: column;
+  padding: 10px;
+  text-align: justify;
+  width: 80%;
+  background-color: rgb(205, 228, 249);
+}
+.hard_text {
+  margin: 10px 20px 0px 20px;
+}
+.hard_title {
+  margin: 10px;
+  padding: 4px;
+  display: inline-block;
+  font-family: "Ubuntu";
+  font-size: medium;
+  background-color: #13226b;
+  border-radius: 5px;
+  color: white;
+}
+.hard_table {
+  font-size: medium;
+}
+td {
+  text-align: left;
+  padding-bottom: 4px;
+}
+th {
+  padding-right: 20px;
+  vertical-align: top;
+  text-align: left;
+  min-width: 130px;
+  font-weight: 400;
+}
+.hard_table_name {
+  font-weight: 700;
+}
+
+/* Quiz */
+.quizContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.quizWindow {
+  color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #13226b;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.quizButton {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  border: none;
+  margin: 10px;
+  min-width: 0px;
+  transition: 0.5s;
+}
+.quizButton:hover {
+  color: yellow;
+  background-color: #0e184c;
+}
+
+/* YT */
+
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* ToDo */
+.toDoTaskBar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.toDoInput,
+.toDoInput:focus {
+  width: 65%;
+  padding: 0px 15px 0px 15px;
+  border-radius: 20px;
+  font-size: large;
+  background-color: rgb(165, 211, 255);
+  border: none;
+  outline: none;
+  font-family: "Cookie";
+  font-size: 28px;
+}
+
+.toDoInputButton {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-width: 0px;
+  width: 25%;
+  height: auto;
+}
+
+.toDoButton {
+  margin: 0px 10px 0px 10px;
+  min-width: 0px;
+  width: auto;
+  height: auto;
+}
+
+.toDoElem {
+  display: flex;
+  justify-content: space-start;
+  align-items: center;
+  list-style-type: none;
+  margin: 10px;
+  font-family: "Cookie";
+  font-size: 32px;
+}
